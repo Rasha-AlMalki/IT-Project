@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <title>University Services - Library</title>
+</head>
+
+<body>
+  <form class="" action="index.html" method="post">
+
+    <div class="accordion card" id="container">
+      <div class="card-header container-header">
+      University Services - Library
+      </div>
+      <div class="card card-custom" id="generalInfo">
+        <div class="card-header card-header-custom">
+          <button class="custom-btn" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            General information
+          </button>
+        </div>
+        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#container">
+          <div class="card-body">
+            <label for="class">Choose:</label><br>
+            <input id="undergraduate" class="" type="radio" name="class" value="undergraduate" readonly>
+            <label for="undergraduate">Undergraduate</label>
+            <input id="postgraduate" class="" type="radio" name="class" value="postgraduate" readonly>
+            <label for="postgraduate">Postgraduate</label>
+            <input id="teacher" class="" type="radio" name="class" value="teacher" readonly>
+            <label for="teacher">Teacher</label>
+            <input id="employee" class="" type="radio" name="class" value="employee" readonly>
+            <label for="employee">Employee</label>
+            <br>
+            <label for="year">Year:</label>
+            <input id="year" class="form-control" type="text" placeholder="2020" readonly>
+            <br>
+            <label for="semester">Semester:</label>
+            <input id="semester" class="form-control" type="text" placeholder="Fall" readonly>
+            <br>
+            <label for="faculty">Faculty:</label>
+            <input id="faculty" class="form-control" type="text" placeholder="Faculty of Computing and Information Technology" readonly>
+            <br>
+            <label for="department">Department:</label>
+            <input id="department" class="form-control" type="text" placeholder="Computer Science" readonly>
+            <br>
+            <label for="class">On average, how often do you visit the library per semester?</label><br>
+            <input id="daily" class="" type="radio" name="class" value="daily" readonly>
+            <label for="daily">Daily</label>
+            <input id="1 week" class="" type="radio" name="class" value="1 week" readonly>
+            <label for="1 week">1-3 times a week</label>
+            <input id="month" class="" type="radio" name="class" value="month" readonly>
+            <label for="month">Once a month</label>
+            <input id="semester" class="" type="radio" name="class" value="semester" readonly>
+            <label for="semester">1-3 times a semester</label>
+            <br>
+            <div class="card-body" id="reasons">
+              <label for="reasons">Visiting reasons:</label>
+
+              <div class="form-check">
+                <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                  For perusal
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                  For research and study
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                  Other
+              </label>
+            </div>
+          </div>
+
+          <div class="card-body" id="services">
+            <label for="services">Services you got:</label>
+
+            <div class="form-check">
+              <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Lending
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                Electronic services (internet, databases)
+                </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">
+                Search in the automated index for sources
+                </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkElement" type="checkbox" value="" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck5">
+                Scanner
+                </label>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="card card-custom " id="first">
+        <div class="card-header card-header-custom ">
+
+          <button class="custom-btn collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            Library evaluation
+          </button>
+        </div>
+
+        <div id="collapse2" class="panel-collapse collapse" aria-labelledby="heading2" data-parent="#container">
+          <div class="card-body">
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">1. The library provides the printed materials (books - references - periodicals) that I need for research and study.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">2. Ease of use of the automated index.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">3. Clarity of instructions for using the automatic index.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">4. Easy access to printed materials on shelves.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">5. Ease of procedures for lending and returning books.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">6. Availability of scientific thesis (paper or electronic) that meet the requirements of study and research.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">7. Databases provide the information I need for study and research.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">8. Ease and speed of providing service in requesting research and articles from the British Library.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">9. The electronic library provides appropriate information resources.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">10. I'm constantly browsing the library website.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">11. The library website enables me to easily access the information.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">12. The library provides guidance and direction services.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">13. The library provides many activities that develop my skills.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">14. I can know all that is new in the library through the ongoing briefing service.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">15. The general atmosphere and facilities of the library encourage learning and study.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">16. I notice a continuous improvement in the library services and facilities.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">17. The library provides an efficient photography service.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">18. I find generally good treatment from the library staff.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">19. The administration is concerned with the suggestions and complaints of the beneficiaries.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">20. The administration facilitates the difficulties face me as a beneficiary.</label>
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange" class="disagree">Strongly Disagree</label>
+              </div>
+              <div class="col-sm-2">
+                <input type="range" class="custom-range range1" id="formControlRange" min="1" max="5">
+              </div>
+              <div class="col-sm-2">
+                <label for="formControlRange">Strongly Agree</label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-custom" id="fifth">
+        <div class="card-header card-header-custom">
+          <button class="custom-btn" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+            Open-ended questions
+          </button>
+        </div>
+
+        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#container">
+
+
+          <div class="card-body">
+            <div class="row padding-row">
+              <div class="col">
+                <label for="" class="">1. Other notes?</label>
+              </div>
+              <div class="col-lg">
+                <textarea class="form-control custom-textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="row-md-12 text-center">
+  <button type="button" name="submit" class="btn btn-success btn-submit">Submit</button>
+  <input type="reset" class="btn btn-success btn-submit">
+</div>
+
+  </form>
+</body>
+
+</html>
